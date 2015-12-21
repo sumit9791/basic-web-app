@@ -18,7 +18,7 @@ import tutorial.entities.BlogEntry;
 public class BlogEntryController {
     @RequestMapping(value="/test", method = RequestMethod.POST)
     public @ResponseBody BlogEntry test(@RequestBody BlogEntry entry){
-
+        System.out.println();
         return entry;
 
 
