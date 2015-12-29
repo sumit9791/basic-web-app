@@ -11,13 +11,15 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="tutorial.mvc"/>
+    <context:component-scan base-package="org.java"/>
     <mvc:annotation-driven/>
     <bean id="jspViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/jsp/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
+    <bean id="encoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder">
+        <constructor-arg value="12"></constructor-arg>
 
-    <mvc:annotation-driven />
+    </bean>
 
 </beans>

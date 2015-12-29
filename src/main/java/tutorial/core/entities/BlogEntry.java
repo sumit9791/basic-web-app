@@ -1,4 +1,4 @@
-package tutorial.entities;
+package tutorial.core.entities;
 
 /**
  * Created by CygnusX on 22-Dec-15.
