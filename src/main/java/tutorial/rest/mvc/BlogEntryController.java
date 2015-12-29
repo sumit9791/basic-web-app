@@ -1,14 +1,13 @@
-package tutorial.mvc;
+package tutorial.rest.mvc;
 
 
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import tutorial.entities.BlogEntry;
+import org.springframework.web.servlet.ModelAndView;
+
 
 /**
  * Created by CygnusX on 19-Dec-15.
@@ -16,11 +15,6 @@ import tutorial.entities.BlogEntry;
 @Controller
 
 public class BlogEntryController {
-    @RequestMapping(value="/test", method = RequestMethod.POST)
-    public @ResponseBody BlogEntry test(@RequestBody BlogEntry entry){
-        System.out.println();
-        return entry;
-
-
-    }
+    ModelAndView modelAndView= new ModelAndView("");
+    String a;
 }
